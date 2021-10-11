@@ -6,7 +6,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { Dashboard, PeopleAlt } from '@material-ui/icons';
 import { NavLink } from 'react-router-dom';
-import { link } from 'fs';
 
 const useStyles = makeStyles((theme) => ({
   root: {
