@@ -7,9 +7,6 @@ import { AdminLayout } from 'components/Layout';
 import { NotFound, PrivateRoute } from 'components/Common';
 
 function App() {
-  useEffect(()=> {
-    cityApi.getAll().then(res => {console.log(res)});
-  });
   return (
     <div>
       <Switch>

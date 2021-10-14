@@ -4,9 +4,7 @@ import { Redirect, Route, RouteProps } from 'react-router';
 export interface PrivateRouteProps {
 }
 
-export function PrivateRoute (props: RouteProps) {
-  console.log({props});
-  
+export function PrivateRoute (props: RouteProps) {  
   // check user is logged in
   //if yes , show route
   //otherwise, redirect to login

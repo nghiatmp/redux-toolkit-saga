@@ -15,8 +15,8 @@ function * fetchStatistics() {
   const statisticsList = reponseList.map(x => x.pagination._totalRows);
   
   const [maleCount, femaleCount, highMarkCount, lowMarkCount] = statisticsList;
-
-  yield put(dashboardActions.setStatistic({maleCount, femaleCount, highMarkCount, lowMarkCount}));
+  
+  // yield put(dashboardActions.setStatistic({maleCount, femaleCount, highMarkCount, lowMarkCount}));
 
 };
 
@@ -56,6 +56,7 @@ function * fetchRankingByCityList() {
   const responseList:Array<ListResponse<Student>> = yield all(callList);
   const rankingByCityList: Array<RankingByCity> = responseList.map((item, index) => ({
     cityId: cityList[index].code,
+    cityName: cityList[index].name,
     rankingList: item.data
   }));
   
