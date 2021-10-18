@@ -45,7 +45,8 @@ const studentSlice = createSlice({
     },
     setPagination(state, action:PayloadAction<PaginationParams>) {
       state.pagination = action.payload;
-    }
+    },
+    setFilterWithDebounce(state, action:PayloadAction<ListParams>) {},
 
   },
 });
